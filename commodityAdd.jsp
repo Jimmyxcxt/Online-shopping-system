@@ -55,3 +55,94 @@ if(name==null||name==''){
 		alert("商品总数量不能为空！");
 		return false;
 		}
+
+}</script>
+<script type="text/javascript">
+function change(aa)
+{
+ document.getElementById("commodityLeaveNum").value=aa;
+}
+</script>
+
+<META content="MSHTML 6.00.2900.5726" name=GENERATOR></HEAD>
+<BODY><BR>
+<TABLE class=tableborder cellSpacing=1 cellPadding=3 width="95%" align=center 
+border=0>
+</TABLE><BR>
+<form action="CommodityAction!addCommodity.action" method="post" enctype="multipart/form-data" name="myform" onsubmit="return check();">
+<TABLE cellSpacing=1 cellPadding=3 width="95%" align=center bgColor=#6ab6b6 border=0>
+  <TBODY>
+  <TR>
+    <TH colSpan=2 height=24>【新增商品】</TH> 
+   </TR>
+  <TR>
+    <TD class=forumrow width="30%" height=24><div align="right">商品名称：</div></TD>
+  <TD class=forumrowhighlight width="70%" 
+      height=24><input type="text" name="commodity.commodityName" id="name"></TD></TR>
+  <TR>
+    <TD class=forumrow height=24><div align="right">商品分类：</div></TD>
+    <TD class=forumrowhighlight 
+      height=24>
+      
+      <select name="commodity.commodityClass.commodityClassId">
+      <s:iterator value="#request.commodityClasses" status="stuts" id="test">
+      <option value="<s:property value='#test.commodityClassId'/>"><s:property value="#test.commodityClassName"/></option>
+      </s:iterator>
+      </select>
+      
+      </TD>
+  </TR>
+  <TR>
+    <TD class=forumrow height=24><div align="right">生产厂家：</div></TD>
+    <TD class=forumrowhighlight 
+      height=24><input type="text" name="commodity.manufacturer" id="manufacturer"/></TD>
+  </TR>
+  <TR>
+    <TD class=forumrow height=24><div align="right">商品图片：</div></TD>
+    <TD class=forumrowhighlight 
+      height=24><input type="file" name="image" id="Image" />
+     </TD>
+  </TR>
+  <TR>
+    <TD class=forumrow height=24><div align="right">商品描述：</div></TD>
+    <TD class=forumrowhighlight 
+      height=24><textarea name="commodity.commodityDepict" cols="50" rows="5" id="commodityDepict"></textarea></TD>
+  </TR>
+  <TR>
+    <TD class=forumrow height=24><div align="right" >商品价格：</div></TD>
+    <TD class=forumrowhighlight  height=24>
+    <input type="text" name="commodity.commodityPrice" id="commodityPrice"></TD>
+  </TR>
+  <TR>
+    <TD class=forumrow height=24><div align="right">商城价格：</div></TD>
+    <TD class=forumrowhighlight  height=24>
+      <input type="text" name="commodity.webPrice" id="webPrice"></TD>
+  </TR>
+  <TR>
+    <TD class=forumrow height=24><div align="right">商品总数量：</div></TD>
+    <TD class=forumrowhighlight height=24>
+    <input type="text" name="commodity.commodityAmount" id="commodityAmount" onblur="change(this.value)"></TD>
+  </TR>
+  <TR>
+    <TD class=forumrow height=24><div align="right">商品剩余数量;</div></TD>
+    <TD class=forumrowhighlight 
+      height=24><input type="text" name="commodity.commodityLeaveNum" id="commodityLeaveNum"  readonly="readonly" ></TD>
+  </TR>
+  <TR>
+    <TD class=forumrow height=24>&nbsp;</TD>
+    <TD class=forumrowhighlight 
+      height=24><input type="submit" value="提交">
+      <input type="reset" value="重置"></TD>
+  </TR>
+  <TR>
+    <TD class=forumrow height=24>&nbsp;</TD>
+    <TD class=forumrowhighlight 
+      height=24>${addComessage}</TD>
+  </TR>
+  </TBODY></TABLE>
+</form>  
+<BR>
+<TABLE class=tableborder cellSpacing=1 cellPadding=3 width="95%" align=center 
+border=0>;
+</TABLE><BR>
+</BODY></HTML>
