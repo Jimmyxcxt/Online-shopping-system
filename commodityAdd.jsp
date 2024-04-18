@@ -124,7 +124,7 @@ border=0>
     <input type="text" name="commodity.commodityAmount" id="commodityAmount" onblur="change(this.value)"></TD>
   </TR>
   <TR>
-    <TD class=forumrow height=24><div align="right">商品剩余数量;</div></TD>
+    <TD class=forumrow height=24><div align="right">商品剩余数量:</div></TD>
     <TD class=forumrowhighlight 
       height=24><input type="text" name="commodity.commodityLeaveNum" id="commodityLeaveNum"  readonly="readonly" ></TD>
   </TR>
@@ -143,6 +143,6 @@ border=0>
 </form>  
 <BR>
 <TABLE class=tableborder cellSpacing=1 cellPadding=3 width="95%" align=center 
-border=0>;
+border=0>
 </TABLE><BR>
 </BODY></HTML>
