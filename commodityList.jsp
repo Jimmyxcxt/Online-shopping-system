@@ -15,3 +15,27 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	FONT-WEIGHT: bold; COLOR: #0099ff
 }
 </STYLE>
+
+<META content="MSHTML 6.00.2900.5726" name=GENERATOR></HEAD>
+<BODY><BR>
+<TABLE class=tableborder cellSpacing=1 cellPadding=3 width="95%" align=center 
+border=0>
+</TABLE><BR>
+<TABLE cellSpacing=1 cellPadding=3 width="95%" align=center bgColor=#6ab6b6 
+border=0>
+  <TBODY>
+  <TR>
+    <TH colSpan=10 height=24>【商品列表】</TH> 
+   </TR>
+     <TR>
+    <TD class=forumrow align="center" width="8%">商品编号</TD>
+    <TD class=forumrow align="center" >商品名称</TD>
+    <TD class=forumrow align="center" width="10%">商品分类</TD>
+    <TD class=forumrow align="center" width="15%">生产厂家</TD>
+    <TD class=forumrow align="center" width="8%">商品价格</TD>
+    <TD class=forumrow align="center" width="8%">商城价格</TD>
+    <TD class=forumrow align="center" width="6%">商品总数量</TD>
+    <TD class=forumrow align="center" width="6%">商品剩余数量</TD>
+    <TD class=forumrow colspan="2" width="8%">操作</TD>
+  </TR>
+  </TR>
