@@ -38,4 +38,4 @@ border=0>
     <TD class=forumrow align="center" width="6%">商品剩余数量</TD>
     <TD class=forumrow colspan="2" width="8%">操作</TD>
   </TR>
-  </TR>
+
