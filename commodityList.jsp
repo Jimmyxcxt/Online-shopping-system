@@ -39,3 +39,33 @@ border=0>
     <TD class=forumrow colspan="2" width="8%">操作</TD>
   </TR>
 
+<s:iterator value="#request.listCommoditys" id="listCommoditys" >
+  <TR>
+    <TD class=forumrow height=24 align="center"><s:property value="#listCommoditys.commodityId"/></TD>
+    <TD class=forumrowhighlight  height=24 align="center"><s:property value="#listCommoditys.commodityName"/></TD>
+    <TD class=forumrowhighlight  height=24 align="center"><s:property value="#listCommoditys.commodityClass.commodityClassName"/></TD>
+    <TD class=forumrowhighlight height=24 align="center"><s:property value="#listCommoditys.manufacturer"/></TD>
+    
+    <TD class=forumrowhighlight height=24 align="center"><s:property value="#listCommoditys.commodityPrice"/></TD>
+    <TD class=forumrowhighlight  height=24 align="center"><s:property value="#listCommoditys.webPrice"/></TD>
+    <TD class=forumrowhighlight height=24 align="center"><s:property value="#listCommoditys.commodityAmount"/></TD>
+    <TD class=forumrowhighlight  height=24 align="center"><s:property value="#listCommoditys.commodityLeaveNum"/></TD>
+    
+  <TD class=forumrowhighlight height=24 align="center">
+  <s:a href="CommodityAction!deleteCommodity.action?commodity.commodityId=%{#listCommoditys.commodityId}" onclick="return confirm('您确定要删除本商品吗?')">删除</s:a></TD>
+    <TD class=forumrowhighlight  height=24 align="center"><a href="CommodityAction!adCommodity.action">添加</a></TD>
+  </TR>
+  </s:iterator>
+  
+    <TR>
+    <TD class=forumrow height=24 colspan="12" align="center">
+    
+    </TD>
+  </TR>
+  </TBODY>
+  </TABLE>
+<BR>
+<TABLE class=tableborder cellSpacing=1 cellPadding=3 width="95%" align=center 
+border=0>
+</TABLE><BR>
+</BODY></HTML>
