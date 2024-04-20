@@ -41,7 +41,6 @@ border=0>
   <TD class=forumrowhighlight width="70%"   height=24>
   <input type="text" name="commodityClass.commodityClassName" id="name"></TD></TR>
   <TR>
- </TR>
     <TD class=forumrow height=24><div align="right"></div></TD>
     <TD class=forumrowhighlight   height=24><span class="forumrow">
       <input type="submit" value="提交">
