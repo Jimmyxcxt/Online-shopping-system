@@ -8,5 +8,5 @@ public interface AdminDao{
   public Admin findAdminById(int id);
   public List<Admin> findAllAdmins();
   public void update(Admin admin);
-  public Admin getUserByLoginNameAndPassword(String name, Stringpasword);
+  public Admin getUserByLoginNameAndPassword(String name, String pasword);
 }
