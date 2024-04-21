@@ -101,7 +101,6 @@ public class AddToCarAction extends ActionSupport {
 					commoditys.setCommodityLeaveNum(commoditys.getCommodityLeaveNum()-1);
 					commodityService.update(commoditys);
 					System.out.println("car2:"+car.size());
-					
 				}
 				else{
 					for(int i = car.size();i>0;i--){
@@ -155,7 +154,7 @@ public class AddToCarAction extends ActionSupport {
 			Commodity com = it.next();
 			if(com.getCommodityId() == commodityId) {
 				 int index = car.indexOf(com); 
-				 it.remove();        //这行代码是关键。删除该商品
+				 it.remove();        //删除该商品
 			}
 		}
 		Iterator<Commodity>  is = car.iterator();
