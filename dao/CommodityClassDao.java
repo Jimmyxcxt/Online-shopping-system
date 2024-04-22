@@ -8,4 +8,5 @@ public interface CommodityClassDao{
   public List<CommodityClass> findAllCommodityClasses();
   public void update(CommodityClass commodityClass);
   public CommodityClass findCommodityClassByName(String name);
+  public CommodityClass findCommodityClassBName(String name);
 }
