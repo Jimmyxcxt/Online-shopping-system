@@ -27,7 +27,9 @@ public class AdminServiceImpl implements AdminService {
 		this.adminDao.delete(user);
 
 	}
-
+        public List<Admin> findAllAdmins() {
+		return this.adminDao.findAllAdmins();
+	}
 	public Admin findAdminById(int id) {
 		// TODO Auto-generated method stub
 		return this.adminDao.findAdminById(id);
