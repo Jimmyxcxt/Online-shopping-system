@@ -16,7 +16,7 @@
     	 	<div class="prod_box">
 	        	<div class="top_prod_box"></div>
 	            <div class="center_prod_box">            
-	                 <div class="product_title"> <a href="CommodityAction!findCommodityById.action?commodity.commodityId=36" target="_top">神舟（HASEE）精盾K470P-i7D2</a></div>
+	                 <div class="product_title"> <a href="CommodityAction!findCommodityById.action?commodity.commodityId=36" target="_top">神舟4840</a></div>
 	                 <div class="product_img"><a href="CommodityAction!findCommodityById.action?commodity.commodityId=36" target="_top"><img src="product/k470p-i7 D2.jpg" alt="神舟（HASEE）精盾K470P-i7D2" title="" border="0" /></a></div>
 	                 <div class="prod_price"><span class="reduce">￥4999</span> <span class="price">￥4599</span></div>                        
 	            </div>
@@ -28,8 +28,8 @@
 	        <div class="prod_box">
 	        	<div class="top_prod_box"></div>
 	            <div class="center_prod_box">            
-	                 <div class="product_title"> <a href="CommodityAction!findCommodityById.action?commodity.commodityId=37" target="_top">Intel 酷睿i5 四核处理器 i5 2320</a></div>
-	                 <div class="product_img"><a href="CommodityAction!findCommodityById.action?commodity.commodityId=37" target="_top"><img src="product/intel i5 2320.jpg" alt="Intel 酷睿i5 四核处理器 i5 2320" title="" border="0" /></a></div>
+	                 <div class="product_title"> <a href="CommodityAction!findCommodityById.action?commodity.commodityId=37" target="_top">Intel 酷睿i7 </a></div>
+	                 <div class="product_img"><a href="CommodityAction!findCommodityById.action?commodity.commodityId=37" target="_top"><img src="product/intel i5 2320.jpg" alt="Intel 酷睿i7" title="" border="0" /></a></div>
 	                 <div class="prod_price"><span class="reduce">￥1220 </span><span class="price">￥1120</span></div>                        
 	            </div>
 	            <div class="bottom_prod_box"></div>             
