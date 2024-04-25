@@ -1,1 +1,44 @@
+package cn.itbaizhan.dao.impl;
+import java.util.List;
+import javax.annotation.Resource;
 
+import org.springframework.orm.hibernate3.HibernateTemplate;
+import org.springframework.stereotype.Component;
+import cn.itbaizhan.dao.AdminDao;
+import cn.itbaizhan.dao.Admin;
+
+public class AdminDaoImpl implements AdminDao{
+  @Resource(name="hibernateTemplate")
+  private HibernateTemplate hibernateTemplate;
+
+  public void delete(Admin admin){
+    hibernateTemplate.delete(admin);
+  }
+  public List<Admin>findAllAdmins(){
+    String hql = "from Admin";
+    return (List<Admin>)hibernateTemplate.find(hql);
+  }
+  public Admin findAdminById(int id){
+    Admin admin = (Admin)hibernateTemplate.get(Admin.class,id);
+    return admin;
+  }
+  public void save(Admin admin){
+    System.out.println(admin);
+    hibernateTemplate.save(admin);
+  }
+  public HibernateTemplate getHibernateTemplate(){
+    return hibernateTemplate;
+  }
+
+  //获取用户
+  public Admin getUserByLoginNameAndPassword(String username, String password) {
+		//String[] values={username, password}; 
+		//String hql = "from User u where u.username=? and u.password=?";
+		//(List<User>)hibernateTemplate.find(hql, values);
+		System.out.println("用户名:"+username);
+		
+		return  (Admin) hibernateTemplate.getSessionFactory().openSession().createQuery(
+		"from Admin a where a.username=? and a.password=?").setParameter(0, username).setParameter(1, password).uniqueResult();
+	}
+
+    
