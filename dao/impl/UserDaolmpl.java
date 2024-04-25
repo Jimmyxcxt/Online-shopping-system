@@ -17,7 +17,12 @@ public class UserDaoImpl implements UserDao {
 	public void delete(User user) {
 	hibernateTemplate.delete(user);
 	}
-  public User findUserById(int id) {
+	@SuppressWarnings("unchecked")//不检查，当编码可能存在警告时，比如安全警告，可以用它来消除
+	public List<User> findAllUsers() {
+		String hql = "from User";
+		return (List<User>)hibernateTemplate.find(hql);
+	}
+        public User findUserById(int id) {
 		User user = (User)hibernateTemplate.get(User.class, id);
 		return user;
 	}
