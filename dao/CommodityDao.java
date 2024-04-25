@@ -10,6 +10,6 @@ public interface CommodityDao{
   public List<Commodity> findAllCommodity();
   public void update(Commodity commodity);
   public List<Commodity> findCommodityByName(String Name);
-  public List<Commodity> findCommodityByClass(CommodityClass commodity);
+  public List<Commodity> findCommodityByClass(CommodityClass commodityclass);
   public List<Commodity> findCommodityBName(String name);
 }
