@@ -6,7 +6,9 @@ import org.springframework.orm.hibernate3.HibernateTemplate;
 import org.springframework.stereotype.Component;
 import cn.itbaizhan.dao.AdminDao;
 import cn.itbaizhan.dao.Admin;
+@Component("adminDaoImpl")
 
+//使用spring对Hibernate的模版 HibernateTemplate
 public class AdminDaoImpl implements AdminDao{
   @Resource(name="hibernateTemplate")
   private HibernateTemplate hibernateTemplate;
@@ -21,10 +23,6 @@ public class AdminDaoImpl implements AdminDao{
   public Admin findAdminById(int id){
     Admin admin = (Admin)hibernateTemplate.get(Admin.class,id);
     return admin;
-  }
-  public void save(Admin admin){
-    System.out.println(admin);
-    hibernateTemplate.save(admin);
   }
   public HibernateTemplate getHibernateTemplate(){
     return hibernateTemplate;
