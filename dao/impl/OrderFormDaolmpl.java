@@ -41,7 +41,7 @@ public class OrderFormDaoImpl implements OrderFormDao {
 	public void setHibernateTmeplate(HibernateTemplate hibernateTemplate) {
 		this.hibernateTemplate = hibernateTemplate;
 	}
-	public OrderForm queryOrderForm(int orderFormId) 
+	public OrderForm queryOrderForm(int orderFormId) {
 		return (OrderForm)hibernateTemplate.getSessionFactory().openSession().createQuery(
 		"from OrderForm o where o.orderFormId=? ").setParameter(
 				0, orderFormId).uniqueResult();
