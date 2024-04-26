@@ -36,3 +36,24 @@ public class CommodityServiceImpl implements CommodityService {
 		
 		return this.commodityDao.findCommodityById(id);
 	}
+        public void save(Commodity commodity) {
+		this.commodityDao.save(commodity);
+
+	}
+
+	public void update(Commodity commodity) {
+		this.commodityDao.update(commodity);
+	}
+	
+	public List<Commodity> findCommodityByName(String Name) {
+		return this.commodityDao.findCommodityByName(Name);
+	}
+
+	public List<Commodity> findCommodityByClass(CommodityClass commodityclass) {
+		
+		return this.commodityDao.findCommodityByClass(commodityclass);
+	}
+	public List<Commodity> findCommodityBName(String Name) {
+		return this.commodityDao.findCommodityBName(Name);
+	}
+}
