@@ -23,7 +23,7 @@ function check(){
    var phone=document.getElementById("phone").value;
    var post=document.getElementById("post").value;
    
-  if(username.length<6||username.length>15){
+   
     //检查用户名是否在指定的范围之内
     alert("用户名长度必须在6~15位之间！");
 	return false;
