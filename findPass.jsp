@@ -24,9 +24,7 @@ function check(){
    var post=document.getElementById("post").value;
    
    
-    //检查用户名是否在指定的范围之内
-    alert("用户名长度必须在6~15位之间！");
-	return false;
+  
    }
      
   if(address==null||address==''){
