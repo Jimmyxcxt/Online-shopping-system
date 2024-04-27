@@ -33,3 +33,29 @@
         <property name="idleConnectionTestPeriod" value="60"/>
 	
 </bean>
+	<!-- 将数据源注入到Spring的sessionFactory中 -->
+<!--<bean id="sessionFactory" class="org.springframework.orm.hibernate3.LocalSessionFactoryBean">-->
+<bean id="sessionFactory" class="org.springframework.orm.hibernate3.annotation.AnnotationSessionFactoryBean"> 
+
+		<property name="dataSource" ref="dataSource"/>
+		<property name="packagesToScan">
+    		<list>
+    		 	<value>cn.itbaizhan.po</value>
+    		</list>
+   		</property>
+		<property name="hibernateProperties">
+				<props>
+					<prop key="hibernate.dialect">org.hibernate.dialect.MySQL5Dialect</prop>
+					<prop key="hibernate.hbm2ddl.auto">update</prop>
+					<prop key="hibernate.show_sql">true</prop>
+					<prop key="format_sql">true</prop>
+							</property>
+
+</bean>
+	
+	<!-- 配置spring的HibernateTemplate的事务模版 -->
+	<bean id="hibernateTemplate" class="org.springframework.orm.hibernate3.HibernateTemplate">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+	
+</beans>	
