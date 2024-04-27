@@ -23,33 +23,7 @@ function check(){
    var phone=document.getElementById("phone").value;
    var post=document.getElementById("post").value;
    
-   
-  
-   }
-     
-  if(address==null||address==''){
-    alert("地址不能为空！");
-	return false;
-   }
-  if(name==null||name==''){
-    alert("名字不能为空！");
-	return false;
-  }
-	if(phone==null||phone==''){
-    alert("电话不能为空！");
-	return false;
-  }
-  if(post==null||post==''){
-    alert("邮编不能为空！");
-	return false;
-  }
- 
-  
-  if(email.match(/[\w-]+@{1}[\w-]+\.{1}\w{2,4}(\.{0,1}\w{2}){0,1}/ig)!=email.value)
-   { alert("电子邮箱格式不正确！");
-	return false;
-  }
-  
+
 }
 </script>
 
